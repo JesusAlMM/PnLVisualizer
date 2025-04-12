@@ -1,4 +1,4 @@
-pacman::p_load("shiny", "bs4Dash", "dplyr", "ggplot2", "shinyjs", "DBI")  # Removido RMySQL
+pacman::p_load("shiny", "bs4Dash", "dplyr", "ggplot2", "shinyjs", "DBI")
 
 ui <- bs4DashPage(
   title = "Black-Scholes Pricing Model",

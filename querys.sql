@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS black_scholes_app;
 USE black_scholes_app;
-drop database black_scholes_app;
+
 CREATE TABLE IF NOT EXISTS Input (
     id INT AUTO_INCREMENT PRIMARY KEY,
     StockPrice DECIMAL(10, 2),

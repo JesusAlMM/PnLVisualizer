@@ -1,4 +1,4 @@
-# PnLVisualizer
+# Profit and Loss Visualizer
 
 Esta aplicación interactiva desarrollada con Shiny implementa el modelo de Black-Scholes para calcular precios de opciones europeas tipo Call y Put. A través de un panel amigable e intuitivo, permite explorar cómo cambian los precios y las ganancias/pérdidas esperadas (PnL) ante variaciones en parámetros clave como el precio spot y la volatilidad. La app incluye visualizaciones dinámicas mediante heatmaps, y cuenta con conexión a una base de datos MySQL, donde se almacenan automáticamente los inputs y resultados de cada simulación para facilitar su trazabilidad y análisis posterior.
 

@@ -1,37 +1,44 @@
 # Profit and Loss Visualizer
 
-Esta aplicación interactiva desarrollada con Shiny implementa el modelo de Black-Scholes para calcular precios de opciones europeas tipo Call y Put. A través de un panel amigable e intuitivo, permite explorar cómo cambian los precios y las ganancias/pérdidas esperadas (PnL) ante variaciones en parámetros clave como el precio spot y la volatilidad. La app incluye visualizaciones dinámicas mediante heatmaps, y cuenta con conexión a una base de datos MySQL, donde se almacenan automáticamente los inputs y resultados de cada simulación para facilitar su trazabilidad y análisis posterior.
+This interactive Shiny-based application implements the Black-Scholes model to calculate Call and Put option prices. Through a user-friendly and intuitive panel, it allows users to explore how prices and expected profits/losses (PnL) change based on variations in key parameters such as spot price and volatility. The app includes dynamic visualizations using heatmaps and features a connection to a MySQL database, where inputs and simulation results are automatically stored for traceability and further analysis.
 
-http://038p5o-jesus-martinez.shinyapps.io/pet1
+*Basic app:  
+http://038p5o-jesus-martinez.shinyapps.io/pet1  
 
-## 📂 Contenido del repositorio
+## 📂 Repository Contents  
 
-- `app/`: versión lista para ser deployada en shinyapps.io.
-- `app_db/`: versión avanzada que incluye conexión a base de datos.
-- `sql/schema.sql`: queries para crear y poblar las tablas necesarias.
-- `README.md`: esta documentación.
+- `app/`: Version ready for deployment on shinyapps.io.  
+- `app_db/`: Advanced version with database connectivity.  
+- `sql/schema.sql`: Queries to create and populate required tables.  
+- `README.md`: Documentation.  
 
-## 🚀 Funcionalidades
+## 🚀 Features  
 
-### 1. Cálculo y simulación de opciones
+### 1. Option Calculation and Simulation  
 
-- Cálculo de precios de opciones europeas (Call y Put) mediante el modelo de Black-Scholes.
-- Simulación de compra y venta con cálculo de PnL (ganancias/pérdidas).
-- Visualización en tiempo real de precios Call y Put.
+- Calculation of option prices (Call and Put) using the Black-Scholes model.  
+- Buy/sell simulation with PnL (profit/loss) calculation.  
+- Real-time visualization of Call and Put prices.  
 
-### 2. Dashboard interactivo
+### 2. Interactive Dashboard  
 
-- Panel para ingresar parámetros clave: Spot (S), Strike (K), Tiempo al vencimiento (T), Volatilidad (σ) y Tasa libre de riesgo (r).
-- Configuración de rangos personalizados para generar heatmaps.
-- Heatmaps dinámicos de precios y PnL bajo distintos escenarios.
-- Botón para restablecer parámetros a valores predeterminados.
+- Input panel for key parameters:  
+  - Spot (S)  
+  - Strike (K)  
+  - Time to maturity (T)  
+  - Volatility (σ)  
+  - Risk-free rate (r)  
 
-### 3. Persistencia en base de datos
+- Custom range configuration for heatmap generation.  
+- Dynamic heatmaps for prices and PnL under different scenarios.  
+- Reset button to restore default parameters.  
 
-- Registro automático de cada simulación en una base de datos MySQL.
-- Guardado estructurado de inputs, outputs y shocks relativos (spot y volatilidad).
+### 3. Database Persistence  
 
-## ⚙️ Escalabilidad
+- Automatic logging of each simulation in a MySQL database.  
+- Structured storage of inputs, outputs, and relative shocks (spot and volatility).  
 
-Aunque esta aplicación está actualmente conectada a una base de datos MySQL, su arquitectura permite adaptarla fácilmente a otros sistemas de almacenamiento como PostgreSQL, SQLite, o servicios en la nube como Amazon RDS, Google Cloud SQL o Azure SQL Database.
+## ⚙️ Scalability  
+
+Although this application is currently connected to a MySQL database, its architecture allows easy adaptation to other storage systems such as PostgreSQL, SQLite, or cloud services like Amazon RDS, Google Cloud SQL, or Azure SQL Database.  
 
